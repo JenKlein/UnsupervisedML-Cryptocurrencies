@@ -15,7 +15,7 @@ The original crypto data had a variety of data types, so it was pre-processed by
   2) dropping any rows with null values
   3) dropping "CoinName" and "IsTrading" columns that were no longer relevant and string data types
 
-Then the get_dummies function was used to convert the 'Algorithm' and 'ProofType' columns to integer data types. The data was then normalized with the sklearn StandardScaler() function. Since the get_dummies function increased the dimension of the data to 100 columns, PAC was performed to reduce the dimensions to three components for each trading crypto stock. 
+Then the get_dummies function was used to convert the 'Algorithm' and 'ProofType' columns to integer data types. The data was then normalized with the sklearn StandardScaler() function. Since the get_dummies function increased the dimension of the data to 100 columns, PAC was performed to reduce the dimensions to three components for each active trading crypto stock. 
 
 ![Screen Shot 2021-07-04 at 6 47 44 PM](https://user-images.githubusercontent.com/69849998/124401617-54f0cf00-dcf8-11eb-8fbf-e3069d078b2e.png)
 
